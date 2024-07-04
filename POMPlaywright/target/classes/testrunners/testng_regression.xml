@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HSBC Regression PW Suite" verbose="4">
+	<test name="HSBC Home Page Test_chrome">
+		<classes>
+			<class name="kpmg.qa.hsbc.test.HomePagetest" />
+		</classes>
+	</test>
+</suite>

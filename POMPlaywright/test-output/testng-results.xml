@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-03T15:50:21 IST" name="Default suite" finished-at="2024-07-03T15:51:46 IST" duration-ms="84936">
+    <groups>
+    </groups>
+    <test started-at="2024-07-03T15:50:21 IST" name="Default test" finished-at="2024-07-03T15:51:46 IST" duration-ms="84936">
+      <class name="kpmg.qa.hsbc.test.BrokerNewRequestPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:kpmg.qa.hsbc.test.BrokerNewRequestPageTest@451001e5]" started-at="2024-07-03T15:50:21 IST" name="setup" finished-at="2024-07-03T15:50:47 IST" duration-ms="26274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NewSRCreation([[Ljava.lang.Object;)[pri:0, instance:kpmg.qa.hsbc.test.BrokerNewRequestPageTest@451001e5]" started-at="2024-07-03T15:50:47 IST" name="NewSRCreation" finished-at="2024-07-03T15:50:47 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot instantiate class kpmg.qa.hsbc.excelutil.GetInputDataFromExcel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot instantiate class kpmg.qa.hsbc.excelutil.GetInputDataFromExcel
+at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:43)
+at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:61)
+at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:10)
+at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:61)
+at org.testng.internal.objects.GuiceBasedObjectDispenser.dispenseObject(GuiceBasedObjectDispenser.java:41)
+at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:31)
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:636)
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:516)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:40)
+... 31 more
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.size()" because the return value of "java.util.HashMap.get(Object)" is null
+at kpmg.qa.hsbc.excelutil.GetInputDataFromExcel.<init>(GetInputDataFromExcel.java:203)
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewSRCreation -->
+        <test-method signature="pagenavigation()[pri:1, instance:kpmg.qa.hsbc.test.BrokerNewRequestPageTest@451001e5]" started-at="2024-07-03T15:50:48 IST" name="pagenavigation" finished-at="2024-07-03T15:51:46 IST" duration-ms="57948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagenavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:kpmg.qa.hsbc.test.BrokerNewRequestPageTest@451001e5]" started-at="2024-07-03T15:51:46 IST" name="teardown" finished-at="2024-07-03T15:51:46 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- kpmg.qa.hsbc.test.BrokerNewRequestPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
